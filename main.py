@@ -29,7 +29,6 @@ for id in matches_id:
     important_keys = ['id', 'players', 'result', 'forfeited', 'date', 'seedType', 'bastionType']
     match_info = {key: match[key] for key in important_keys if key in match}  # Filters non-important keys
 
-    # TODO Filter only the achievements tied to the splits
     for split in match['timelines']:
         if split['uuid'] == my_uuid:
             splits.append(split)
