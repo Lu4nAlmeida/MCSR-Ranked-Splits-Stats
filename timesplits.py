@@ -32,6 +32,18 @@ def filter_timeline(timeline: list, uuid: str, detailed: bool = False) -> list:
     return output
 
 
+def get_opponent(players: list, uuid: str) -> str:
+    opponent = None
+    if len(players) > 2:
+        opponent = 'MULTIPLE'
+    else:
+        for player in players:
+            if player["uuid"] != uuid:
+                opponent = player["nickname"]
+
+    return opponent
+
+
 def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> dict:
     timeline = filter_timeline(match["splits"][0], uuid, detailed)
 
@@ -71,7 +83,9 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
         except IndexError:
             splits[name] = None
 
-    fieldnames = fieldnames + ["Total", "Seed", "Bastion Type", "Won", "Forfeited"] # TODO Add date and opponent
+    fieldnames = ["Date", "Opponent", "Won", "Forfeited"] + fieldnames + ["Total", "Seed", "Bastion Type"] # TODO Add deaths and resets
+    splits["Date"] = match["date"]
+    splits["Opponent"] = get_opponent(match["players"], uuid)
     splits["Total"] = match["result"]["time"]
     splits["Seed"] = match["seedType"]
     splits["Bastion Type"] = match["bastionType"]
