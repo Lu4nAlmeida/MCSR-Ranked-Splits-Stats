@@ -3,28 +3,12 @@ import pandas as pd
 
 from src.timesplits import *
 import requests
-from timesplits import filter_timeline
+from timesplits import filter_timeline, add_match_to_spreadsheet
 
 
 my_uuid = '5d851a87545645eb988079ced8ef4a6b'
 
+with open('../matches/recent_matches_splits.json', 'r') as f:
+    recent_matches = json.load(f)
 
-yea = [
-    {
-        "a": 0,
-        "b": 'hello'
-    },
-    {
-        "a": 1,
-        "b": 'hello'
-    },
-    {
-        "a": 1,
-        "b": 'hello'
-    },
-]
-df = pd.DataFrame(yea)
-print(df['a'].tolist().count(1))
-
-a=[1,2,3,4,3,1,3]
-print(a.count(3))
+add_match_to_spreadsheet(recent_matches[7], uuid=my_uuid)

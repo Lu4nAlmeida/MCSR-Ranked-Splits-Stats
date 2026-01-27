@@ -22,15 +22,27 @@ achievements_detailed = achievements + [
     "projectelo.timeline.death"
 ]
 
-def filter_timeline(timeline: list, uuid: str, detailed: bool = False) -> list:
+def get_player_timeline(timeline: list, uuid: str):
     output = []
 
     for achievement in timeline:
+        if achievement["uuid"] == uuid:
+            output.append(achievement)
+
+    return output
+
+
+def filter_timeline(timeline: list, uuid: str, detailed: bool = False) -> list:
+    output = []
+
+    timeline = get_player_timeline(timeline, uuid)
+
+    for achievement in timeline:
         if detailed:
-            if achievement["uuid"] == uuid and achievement["type"] in achievements_detailed:
+            if achievement["type"] in achievements_detailed:
                 output.append(achievement)
         else:
-            if achievement["uuid"] == uuid and achievement["type"] in achievements:
+            if achievement["type"] in achievements:
                 output.append(achievement)
 
     return output
@@ -49,13 +61,15 @@ def get_opponent(players: list[dict], uuid: str) -> str:
 
 
 def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> dict:
-    timeline = pd.DataFrame(filter_timeline(match["splits"][0], uuid, detailed)).get('time').tolist()
+    timeline = pd.DataFrame(filter_timeline(match["splits"][0], uuid, detailed))
+    timeline_timestamps = timeline.get('time').tolist()
+    last_time = 0
 
     # Only gets splits up from most recent reset
-    if 'projectelo.timeline.reset' in timeline:
-        timeline.reverse()
-        timeline = timeline[:timeline.index('projectelo.timeline.reset')]
-        timeline.reverse()
+    if 'projectelo.timeline.reset' in timeline.get('type').tolist():
+        index = timeline.get('type').tolist().index('projectelo.timeline.reset')
+        last_time = timeline_timestamps[index]
+        timeline_timestamps = timeline_timestamps[:index]
 
     if detailed:
         fieldnames = [
@@ -81,48 +95,59 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
             "End",
         ]
 
-    splits = {name: 0 for name in fieldnames}
-
-    last_time = 0
+    splits = {name: '' for name in fieldnames}
 
     for name in fieldnames:
         try:
-            current_time = timeline.pop()
-            splits[name] = current_time - last_time
+            current_time = timeline_timestamps.pop()
+            splits[name] = str(datetime.timedelta(milliseconds=current_time - last_time)).split('.')[0]
             last_time = current_time
         except IndexError:
             splits[name] = None
 
     fieldnames = ["Date", "Opponent", "Won", "Forfeited"] + fieldnames + ["Total", "Seed", "Bastion Type", "Deaths", "Resets"]
-    splits["Date"] = match["date"]
+    splits["Date"] = pd.to_datetime(match["date"], unit="s")
     splits["Opponent"] = get_opponent(match["players"], uuid)
-    splits["Total"] = match["result"]["time"]
+    splits["Total"] = str(datetime.timedelta(milliseconds=match["result"]["time"])).split('.')[0]
     splits["Seed"] = match["seedType"]
     splits["Bastion Type"] = match["bastionType"]
     splits["Won"] = True if match["result"]["uuid"] == uuid else False
     splits["Forfeited"] = match["forfeited"]
-    splits["Deaths"] = pd.DataFrame(match["splits"][0]).get('type').tolist().count('projectelo.timeline.death') # TODO Correct issue where opponent's death and resets are also counted
-    splits["Resets"] = pd.DataFrame(match["splits"][0]).get('type').tolist().count('projectelo.timeline.reset')
+
+    full_timeline = pd.DataFrame(get_player_timeline(match["splits"][0], uuid)).get('type').tolist()
+
+    splits["Deaths"] = full_timeline.count('projectelo.timeline.death')
+    splits["Resets"] = full_timeline.count('projectelo.timeline.reset')
 
     # TODO Make the detailed version be saved on a separate file
-    with open("../splits/my_splits.csv", "a", newline="") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    if detailed:
+        with open("../splits/splits_detailed.csv", "a", newline="") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-        # Write header only if file is empty
-        if os.stat("../splits/my_splits.csv").st_size == 0:
-            writer.writeheader()
+            # Write header only if file is empty
+            if os.stat("../splits/splits_detailed.csv").st_size == 0:
+                writer.writeheader()
 
-        writer.writerow(splits)
+            writer.writerow(splits)
+    else:
+        with open("../splits/my_splits.csv", "a", newline="") as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-    return splits
+            # Write header only if file is empty
+            if os.stat("../splits/my_splits.csv").st_size == 0:
+                writer.writeheader()
+
+            writer.writerow(splits)
 
 
 def update_splits_sheets(user_id: str):
     if os.path.exists("../splits/my_splits.csv"):
         os.remove("../splits/my_splits.csv")
+        os.remove("../splits/splits_detailed.csv")
 
     with open('../matches/recent_matches_splits.json', 'r') as f:
         recent_matches = json.load(f)
 
     for match in recent_matches:
         add_match_to_spreadsheet(match, uuid=user_id)
+        add_match_to_spreadsheet(match, uuid=user_id, detailed=True)
