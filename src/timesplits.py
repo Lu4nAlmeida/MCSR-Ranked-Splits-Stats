@@ -1,4 +1,6 @@
 import datetime
+import pandas as pd
+import json
 import csv
 import os
 
@@ -9,13 +11,15 @@ achievements = [
     "projectelo.timeline.blind_travel",
     "story.follow_ender_eye",
     "story.enter_the_end",
-    "projectelo.timeline.dragon_death"
+    "projectelo.timeline.dragon_death",
+    "projectelo.timeline.reset",
 ]
 
 achievements_detailed = achievements + [
     "story.lava_bucket",
     "nether.obtain_crying_obsidian",
     "nether.obtain_blaze_rod",
+    "projectelo.timeline.death"
 ]
 
 def filter_timeline(timeline: list, uuid: str, detailed: bool = False) -> list:
@@ -32,7 +36,7 @@ def filter_timeline(timeline: list, uuid: str, detailed: bool = False) -> list:
     return output
 
 
-def get_opponent(players: list, uuid: str) -> str:
+def get_opponent(players: list[dict], uuid: str) -> str:
     opponent = None
     if len(players) > 2:
         opponent = 'MULTIPLE'
@@ -45,7 +49,13 @@ def get_opponent(players: list, uuid: str) -> str:
 
 
 def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> dict:
-    timeline = filter_timeline(match["splits"][0], uuid, detailed)
+    timeline = pd.DataFrame(filter_timeline(match["splits"][0], uuid, detailed)).get('time').tolist()
+
+    # Only gets splits up from most recent reset
+    if 'projectelo.timeline.reset' in timeline:
+        timeline.reverse()
+        timeline = timeline[:timeline.index('projectelo.timeline.reset')]
+        timeline.reverse()
 
     if detailed:
         fieldnames = [
@@ -77,13 +87,13 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
 
     for name in fieldnames:
         try:
-            current_time = timeline.pop()["time"]
+            current_time = timeline.pop()
             splits[name] = current_time - last_time
             last_time = current_time
         except IndexError:
             splits[name] = None
 
-    fieldnames = ["Date", "Opponent", "Won", "Forfeited"] + fieldnames + ["Total", "Seed", "Bastion Type"] # TODO Add deaths and resets
+    fieldnames = ["Date", "Opponent", "Won", "Forfeited"] + fieldnames + ["Total", "Seed", "Bastion Type", "Deaths", "Resets"]
     splits["Date"] = match["date"]
     splits["Opponent"] = get_opponent(match["players"], uuid)
     splits["Total"] = match["result"]["time"]
@@ -91,15 +101,28 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
     splits["Bastion Type"] = match["bastionType"]
     splits["Won"] = True if match["result"]["uuid"] == uuid else False
     splits["Forfeited"] = match["forfeited"]
+    splits["Deaths"] = pd.DataFrame(match["splits"][0]).get('type').tolist().count('projectelo.timeline.death') # TODO Correct issue where opponent's death and resets are also counted
+    splits["Resets"] = pd.DataFrame(match["splits"][0]).get('type').tolist().count('projectelo.timeline.reset')
 
     # TODO Make the detailed version be saved on a separate file
-    with open("my_splits.csv", "a", newline="") as csvfile:
+    with open("../splits/my_splits.csv", "a", newline="") as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
         # Write header only if file is empty
-        if os.stat("my_splits.csv").st_size == 0:
+        if os.stat("../splits/my_splits.csv").st_size == 0:
             writer.writeheader()
 
         writer.writerow(splits)
 
     return splits
+
+
+def update_splits_sheets(user_id: str):
+    if os.path.exists("../splits/my_splits.csv"):
+        os.remove("../splits/my_splits.csv")
+
+    with open('../matches/recent_matches_splits.json', 'r') as f:
+        recent_matches = json.load(f)
+
+    for match in recent_matches:
+        add_match_to_spreadsheet(match, uuid=user_id)
