@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
 
     print(f"Accessing {username}'s matches...")
-    #get_user_matches()
+    get_user_matches()
 
     print("Updating spreadsheets...")
     update_splits_sheets(user['uuid'])

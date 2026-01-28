@@ -1,21 +1,250 @@
 [
     {
-        "id": 5570696,
+        "id": 5616003,
         "players": [
             {
-                "uuid": "85c8faa948fb4c229fa139f63486a1ab",
-                "nickname": "SettledNomad01",
+                "uuid": "75b0d93204b443cd853b0c4730bb3e5f",
+                "nickname": "Mingyu331",
                 "roleType": 0,
-                "eloRate": 731,
-                "eloRank": 9336,
+                "eloRate": 756,
+                "eloRank": 9033,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
+                "country": "br"
+            }
+        ],
+        "result": {
+            "uuid": "75b0d93204b443cd853b0c4730bb3e5f",
+            "time": 2039990
+        },
+        "forfeited": false,
+        "date": 1769596612,
+        "seedType": "RUINED_PORTAL",
+        "bastionType": "TREASURE",
+        "splits": [
+            [
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1908031,
+                    "type": "projectelo.timeline.death"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1671926,
+                    "type": "story.enter_the_end"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1389206,
+                    "type": "story.follow_ender_eye"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1211203,
+                    "type": "projectelo.timeline.blind_travel"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1045797,
+                    "type": "nether.obtain_blaze_rod"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1017054,
+                    "type": "nether.find_fortress"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 707211,
+                    "type": "nether.obtain_crying_obsidian"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 445065,
+                    "type": "nether.find_bastion"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 108417,
+                    "type": "story.enter_the_nether"
+                }
+            ]
+        ]
+    },
+    {
+        "id": 5615075,
+        "players": [
+            {
+                "uuid": "666ca2ce9e21407682094c3a5378303c",
+                "nickname": "jakedalep",
+                "roleType": 0,
+                "eloRate": 780,
+                "eloRank": 8569,
+                "country": null
+            },
+            {
+                "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                "nickname": "MrLu4n",
+                "roleType": 0,
+                "eloRate": 764,
+                "eloRank": 8878,
+                "country": "br"
+            }
+        ],
+        "result": {
+            "uuid": "666ca2ce9e21407682094c3a5378303c",
+            "time": 1576611
+        },
+        "forfeited": false,
+        "date": 1769594386,
+        "seedType": "SHIPWRECK",
+        "bastionType": "BRIDGE",
+        "splits": [
+            [
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1220077,
+                    "type": "story.follow_ender_eye"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 964084,
+                    "type": "projectelo.timeline.blind_travel"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 765597,
+                    "type": "nether.obtain_blaze_rod"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 760095,
+                    "type": "nether.find_fortress"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 534542,
+                    "type": "nether.obtain_crying_obsidian"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 369091,
+                    "type": "nether.find_bastion"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 309127,
+                    "type": "story.enter_the_nether"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 221786,
+                    "type": "story.lava_bucket"
+                }
+            ]
+        ]
+    },
+    {
+        "id": 5614301,
+        "players": [
+            {
+                "uuid": "7944a9ce1f2c44c68d7177b62dc370fa",
+                "nickname": "Rafingis",
+                "roleType": 0,
+                "eloRate": 728,
+                "eloRank": 9590,
+                "country": null
+            },
+            {
+                "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                "nickname": "MrLu4n",
+                "roleType": 0,
+                "eloRate": 764,
+                "eloRank": 8878,
+                "country": "br"
+            }
+        ],
+        "result": {
+            "uuid": "5d851a87545645eb988079ced8ef4a6b",
+            "time": 1429385
+        },
+        "forfeited": false,
+        "date": 1769592616,
+        "seedType": "RUINED_PORTAL",
+        "bastionType": "BRIDGE",
+        "splits": [
+            [
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1419323,
+                    "type": "projectelo.timeline.dragon_death"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 1229783,
+                    "type": "story.enter_the_end"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 943430,
+                    "type": "story.follow_ender_eye"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 728388,
+                    "type": "projectelo.timeline.blind_travel"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 561271,
+                    "type": "nether.obtain_blaze_rod"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 541066,
+                    "type": "nether.find_fortress"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 344232,
+                    "type": "nether.obtain_crying_obsidian"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 253472,
+                    "type": "nether.find_bastion"
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "time": 177611,
+                    "type": "story.enter_the_nether"
+                }
+            ]
+        ]
+    },
+    {
+        "id": 5570696,
+        "players": [
+            {
+                "uuid": "85c8faa948fb4c229fa139f63486a1ab",
+                "nickname": "SettledNomad01",
+                "roleType": 0,
+                "eloRate": 712,
+                "eloRank": 9957,
+                "country": null
+            },
+            {
+                "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                "nickname": "MrLu4n",
+                "roleType": 0,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -89,16 +318,16 @@
                 "uuid": "7febdb224d214b338516ea7c0228abf8",
                 "nickname": "LolBlazo",
                 "roleType": 0,
-                "eloRate": 742,
-                "eloRank": 9110,
+                "eloRate": 744,
+                "eloRank": 9279,
                 "country": "cz"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -167,16 +396,16 @@
                 "uuid": "95802a5024694dafa2c72bfb7dc01967",
                 "nickname": "Shroomie_Matsuo",
                 "roleType": 0,
-                "eloRate": 733,
-                "eloRank": 9295,
+                "eloRate": 770,
+                "eloRank": 8744,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -250,16 +479,16 @@
                 "uuid": "bf09249dd958442390bb03af406c8d53",
                 "nickname": "SpiweSeven",
                 "roleType": 1,
-                "eloRate": 688,
-                "eloRank": 10392,
+                "eloRate": 682,
+                "eloRank": 10766,
                 "country": "jp"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -333,16 +562,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "2891c373000a4f06a907c7b535aae8e9",
                 "nickname": "SweetGrapeee",
                 "roleType": 0,
-                "eloRate": 628,
-                "eloRank": 12433,
+                "eloRate": 669,
+                "eloRank": 11164,
                 "country": "de"
             }
         ],
@@ -391,16 +620,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "4bff47fcfa9b44e7ba4b4cd4ea6dd15a",
                 "nickname": "anomamorph",
                 "roleType": 1,
-                "eloRate": 698,
-                "eloRank": 10129,
+                "eloRate": 598,
+                "eloRank": 14119,
                 "country": "my"
             }
         ],
@@ -469,16 +698,16 @@
                 "uuid": "041515e63d324c25bdc0678cc56cc9db",
                 "nickname": "cashdrop_",
                 "roleType": 0,
-                "eloRate": 889,
-                "eloRank": 6811,
+                "eloRate": 887,
+                "eloRank": 6960,
                 "country": "ma"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -547,16 +776,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "db31fc58d5764f0eba73138432804502",
                 "nickname": "leothepickle",
                 "roleType": 0,
-                "eloRate": 582,
-                "eloRank": 14396,
+                "eloRate": 544,
+                "eloRank": 16169,
                 "country": "us"
             }
         ],
@@ -641,15 +870,15 @@
                 "nickname": "NekoTrack",
                 "roleType": 0,
                 "eloRate": 667,
-                "eloRank": 10991,
+                "eloRank": 11218,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -733,16 +962,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "b84920405b3f445eb6341a206ccf0183",
                 "nickname": "Xandolf_",
                 "roleType": 1,
-                "eloRate": 606,
-                "eloRank": 13415,
+                "eloRate": 624,
+                "eloRank": 12904,
                 "country": null
             }
         ],
@@ -821,8 +1050,8 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
@@ -830,7 +1059,7 @@
                 "nickname": "Cristunal",
                 "roleType": 0,
                 "eloRate": 668,
-                "eloRank": 10958,
+                "eloRank": 11189,
                 "country": null
             }
         ],
@@ -905,15 +1134,15 @@
                 "nickname": "kunnnefe",
                 "roleType": 0,
                 "eloRate": 706,
-                "eloRank": 9899,
+                "eloRank": 10102,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1007,8 +1236,8 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
@@ -1016,7 +1245,7 @@
                 "nickname": "WombatsFly",
                 "roleType": 0,
                 "eloRate": 628,
-                "eloRank": 12433,
+                "eloRank": 12744,
                 "country": null
             }
         ],
@@ -1076,15 +1305,15 @@
                 "nickname": "Bubi77",
                 "roleType": 0,
                 "eloRate": 735,
-                "eloRank": 9260,
+                "eloRank": 9444,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1148,8 +1377,8 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
@@ -1157,7 +1386,7 @@
                 "nickname": "umaifishy",
                 "roleType": 0,
                 "eloRate": 543,
-                "eloRank": 15812,
+                "eloRank": 16202,
                 "country": "tw"
             }
         ],
@@ -1232,15 +1461,15 @@
                 "nickname": "_Resh",
                 "roleType": 0,
                 "eloRate": 626,
-                "eloRank": 12507,
+                "eloRank": 12823,
                 "country": "fr"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1319,16 +1548,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "6b667d32a3c04502adcb2938cf731064",
                 "nickname": "Calta_",
                 "roleType": 0,
-                "eloRate": 785,
-                "eloRank": 8336,
+                "eloRate": 739,
+                "eloRank": 9356,
                 "country": "au"
             }
         ],
@@ -1397,8 +1626,8 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
@@ -1406,7 +1635,7 @@
                 "nickname": "13Odysseus",
                 "roleType": 0,
                 "eloRate": 665,
-                "eloRank": 11056,
+                "eloRank": 11287,
                 "country": "nz"
             }
         ],
@@ -1471,15 +1700,15 @@
                 "nickname": "asphaltdream",
                 "roleType": 0,
                 "eloRate": 773,
-                "eloRank": 8543,
+                "eloRank": 8683,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1553,16 +1782,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "f690849a40c941a6b25028272b703848",
                 "nickname": "zSPC",
                 "roleType": 1,
-                "eloRate": 698,
-                "eloRank": 10129,
+                "eloRate": 737,
+                "eloRank": 9398,
                 "country": null
             }
         ],
@@ -1622,15 +1851,15 @@
                 "nickname": "09Dragon_Heart",
                 "roleType": 0,
                 "eloRate": 478,
-                "eloRank": 18138,
+                "eloRank": 18590,
                 "country": null
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1705,15 +1934,15 @@
                 "nickname": "1kier",
                 "roleType": 0,
                 "eloRate": 588,
-                "eloRank": 14178,
+                "eloRank": 14524,
                 "country": "nz"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -1777,16 +2006,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "7152043903df4fb084958e8a0ff977d8",
                 "nickname": "Migsej",
                 "roleType": 0,
-                "eloRate": 462,
-                "eloRank": 18628,
+                "eloRate": 442,
+                "eloRank": 19725,
                 "country": "dk"
             }
         ],
@@ -1860,8 +2089,8 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
@@ -1869,7 +2098,7 @@
                 "nickname": "Mr_PenguinMC",
                 "roleType": 1,
                 "eloRate": 561,
-                "eloRank": 15204,
+                "eloRank": 15574,
                 "country": null
             }
         ],
@@ -1949,15 +2178,15 @@
                 "nickname": "thatPERS0N",
                 "roleType": 0,
                 "eloRate": 674,
-                "eloRank": 10773,
+                "eloRank": 10998,
                 "country": "us"
             },
             {
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             }
         ],
@@ -2021,16 +2250,16 @@
                 "uuid": "5d851a87545645eb988079ced8ef4a6b",
                 "nickname": "MrLu4n",
                 "roleType": 0,
-                "eloRate": 789,
-                "eloRank": 8272,
+                "eloRate": 764,
+                "eloRank": 8878,
                 "country": "br"
             },
             {
                 "uuid": "617e4f3e1e2e4cbba38a69e32fd24a2e",
                 "nickname": "MapleFireExists",
                 "roleType": 0,
-                "eloRate": 609,
-                "eloRank": 13252,
+                "eloRate": 506,
+                "eloRank": 17592,
                 "country": "au"
             }
         ],

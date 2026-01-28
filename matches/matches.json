@@ -2,6 +2,236 @@
     "status": "success",
     "data": [
         {
+            "id": 5616003,
+            "type": 2,
+            "seed": {
+                "id": "m722vrnf2gynwh55",
+                "overworld": "RUINED_PORTAL",
+                "nether": "TREASURE",
+                "endTowers": [
+                    100,
+                    85,
+                    97,
+                    103
+                ],
+                "variations": [
+                    "type:structure:lava",
+                    "biome:structure:plains",
+                    "type:structure:lava",
+                    "biome:structure:plains",
+                    "biome:bastion:nether_wastes",
+                    "biome:fortress:nether_wastes",
+                    "end_spawn:buried:59"
+                ]
+            },
+            "category": "ANY",
+            "gameMode": "default",
+            "players": [
+                {
+                    "uuid": "75b0d93204b443cd853b0c4730bb3e5f",
+                    "nickname": "Mingyu331",
+                    "roleType": 0,
+                    "eloRate": 756,
+                    "eloRank": 9033,
+                    "country": null
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "nickname": "MrLu4n",
+                    "roleType": 0,
+                    "eloRate": 764,
+                    "eloRank": 8878,
+                    "country": "br"
+                }
+            ],
+            "spectators": [],
+            "result": {
+                "uuid": "75b0d93204b443cd853b0c4730bb3e5f",
+                "time": 2039990
+            },
+            "forfeited": false,
+            "decayed": false,
+            "rank": {
+                "season": null,
+                "allTime": null
+            },
+            "vod": [],
+            "changes": [
+                {
+                    "uuid": "75b0d93204b443cd853b0c4730bb3e5f",
+                    "change": 22,
+                    "eloRate": 734
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "change": -22,
+                    "eloRate": 786
+                }
+            ],
+            "beginner": false,
+            "botSource": null,
+            "season": 10,
+            "date": 1769596612,
+            "seedType": "RUINED_PORTAL",
+            "bastionType": "TREASURE",
+            "tag": null
+        },
+        {
+            "id": 5615075,
+            "type": 2,
+            "seed": {
+                "id": "m7238uqz7dr3h714",
+                "overworld": "SHIPWRECK",
+                "nether": "BRIDGE",
+                "endTowers": [
+                    91,
+                    82,
+                    76,
+                    88
+                ],
+                "variations": [
+                    "chest:structure:carrot",
+                    "biome:structure:deep_ocean",
+                    "type:structure:normal",
+                    "chest:structure:carrot",
+                    "biome:structure:deep_ocean",
+                    "type:structure:normal",
+                    "bastion:triple:1",
+                    "bastion:single:1",
+                    "biome:bastion:nether_wastes",
+                    "biome:fortress:basalt_deltas",
+                    "end_tower:caged:front_center"
+                ]
+            },
+            "category": "ANY",
+            "gameMode": "default",
+            "players": [
+                {
+                    "uuid": "666ca2ce9e21407682094c3a5378303c",
+                    "nickname": "jakedalep",
+                    "roleType": 0,
+                    "eloRate": 780,
+                    "eloRank": 8569,
+                    "country": null
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "nickname": "MrLu4n",
+                    "roleType": 0,
+                    "eloRate": 764,
+                    "eloRank": 8878,
+                    "country": "br"
+                }
+            ],
+            "spectators": [],
+            "result": {
+                "uuid": "666ca2ce9e21407682094c3a5378303c",
+                "time": 1576611
+            },
+            "forfeited": false,
+            "decayed": false,
+            "rank": {
+                "season": null,
+                "allTime": null
+            },
+            "vod": [],
+            "changes": [
+                {
+                    "uuid": "666ca2ce9e21407682094c3a5378303c",
+                    "change": 21,
+                    "eloRate": 779
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "change": -21,
+                    "eloRate": 807
+                }
+            ],
+            "beginner": false,
+            "botSource": null,
+            "season": 10,
+            "date": 1769594386,
+            "seedType": "SHIPWRECK",
+            "bastionType": "BRIDGE",
+            "tag": null
+        },
+        {
+            "id": 5614301,
+            "type": 2,
+            "seed": {
+                "id": "m722tiiy7n5pfezy",
+                "overworld": "RUINED_PORTAL",
+                "nether": "BRIDGE",
+                "endTowers": [
+                    94,
+                    91,
+                    79,
+                    85
+                ],
+                "variations": [
+                    "type:structure:completable",
+                    "biome:structure:plains",
+                    "type:structure:completable",
+                    "biome:structure:plains",
+                    "bastion:triple:2",
+                    "biome:bastion:nether_wastes",
+                    "biome:fortress:soul_sand_valley",
+                    "end_tower:caged:back"
+                ]
+            },
+            "category": "ANY",
+            "gameMode": "default",
+            "players": [
+                {
+                    "uuid": "7944a9ce1f2c44c68d7177b62dc370fa",
+                    "nickname": "Rafingis",
+                    "roleType": 0,
+                    "eloRate": 728,
+                    "eloRank": 9590,
+                    "country": null
+                },
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "nickname": "MrLu4n",
+                    "roleType": 0,
+                    "eloRate": 764,
+                    "eloRank": 8878,
+                    "country": "br"
+                }
+            ],
+            "spectators": [],
+            "result": {
+                "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                "time": 1429385
+            },
+            "forfeited": false,
+            "decayed": false,
+            "rank": {
+                "season": null,
+                "allTime": null
+            },
+            "vod": [],
+            "changes": [
+                {
+                    "uuid": "5d851a87545645eb988079ced8ef4a6b",
+                    "change": 18,
+                    "eloRate": 789
+                },
+                {
+                    "uuid": "7944a9ce1f2c44c68d7177b62dc370fa",
+                    "change": -18,
+                    "eloRate": 745
+                }
+            ],
+            "beginner": false,
+            "botSource": null,
+            "season": 10,
+            "date": 1769592616,
+            "seedType": "RUINED_PORTAL",
+            "bastionType": "BRIDGE",
+            "tag": null
+        },
+        {
             "id": 5570696,
             "type": 2,
             "seed": {
@@ -31,16 +261,16 @@
                     "uuid": "85c8faa948fb4c229fa139f63486a1ab",
                     "nickname": "SettledNomad01",
                     "roleType": 0,
-                    "eloRate": 731,
-                    "eloRank": 9336,
+                    "eloRate": 712,
+                    "eloRank": 9957,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -103,16 +333,16 @@
                     "uuid": "7febdb224d214b338516ea7c0228abf8",
                     "nickname": "LolBlazo",
                     "roleType": 0,
-                    "eloRate": 742,
-                    "eloRank": 9110,
+                    "eloRate": 744,
+                    "eloRank": 9279,
                     "country": "cz"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -179,16 +409,16 @@
                     "uuid": "95802a5024694dafa2c72bfb7dc01967",
                     "nickname": "Shroomie_Matsuo",
                     "roleType": 0,
-                    "eloRate": 733,
-                    "eloRank": 9295,
+                    "eloRate": 770,
+                    "eloRank": 8744,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -254,16 +484,16 @@
                     "uuid": "bf09249dd958442390bb03af406c8d53",
                     "nickname": "SpiweSeven",
                     "roleType": 1,
-                    "eloRate": 688,
-                    "eloRank": 10392,
+                    "eloRate": 682,
+                    "eloRank": 10766,
                     "country": "jp"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -329,16 +559,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "2891c373000a4f06a907c7b535aae8e9",
                     "nickname": "SweetGrapeee",
                     "roleType": 0,
-                    "eloRate": 628,
-                    "eloRank": 12433,
+                    "eloRate": 669,
+                    "eloRank": 11164,
                     "country": "de"
                 }
             ],
@@ -402,16 +632,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "4bff47fcfa9b44e7ba4b4cd4ea6dd15a",
                     "nickname": "anomamorph",
                     "roleType": 1,
-                    "eloRate": 698,
-                    "eloRank": 10129,
+                    "eloRate": 598,
+                    "eloRank": 14119,
                     "country": "my"
                 }
             ],
@@ -475,16 +705,16 @@
                     "uuid": "041515e63d324c25bdc0678cc56cc9db",
                     "nickname": "cashdrop_",
                     "roleType": 0,
-                    "eloRate": 889,
-                    "eloRank": 6811,
+                    "eloRate": 887,
+                    "eloRank": 6960,
                     "country": "ma"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -555,16 +785,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "db31fc58d5764f0eba73138432804502",
                     "nickname": "leothepickle",
                     "roleType": 0,
-                    "eloRate": 582,
-                    "eloRank": 14396,
+                    "eloRate": 544,
+                    "eloRank": 16169,
                     "country": "us"
                 }
             ],
@@ -634,15 +864,15 @@
                     "nickname": "NekoTrack",
                     "roleType": 0,
                     "eloRate": 667,
-                    "eloRank": 10991,
+                    "eloRank": 11218,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -712,16 +942,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "b84920405b3f445eb6341a206ccf0183",
                     "nickname": "Xandolf_",
                     "roleType": 1,
-                    "eloRate": 606,
-                    "eloRank": 13415,
+                    "eloRate": 624,
+                    "eloRank": 12904,
                     "country": null
                 }
             ],
@@ -786,8 +1016,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -795,7 +1025,7 @@
                     "nickname": "Cristunal",
                     "roleType": 0,
                     "eloRate": 668,
-                    "eloRank": 10958,
+                    "eloRank": 11189,
                     "country": null
                 }
             ],
@@ -860,15 +1090,15 @@
                     "nickname": "kunnnefe",
                     "roleType": 0,
                     "eloRate": 706,
-                    "eloRank": 9899,
+                    "eloRank": 10102,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -937,8 +1167,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -946,7 +1176,7 @@
                     "nickname": "WombatsFly",
                     "roleType": 0,
                     "eloRate": 628,
-                    "eloRank": 12433,
+                    "eloRank": 12744,
                     "country": null
                 }
             ],
@@ -1014,15 +1244,15 @@
                     "nickname": "Bubi77",
                     "roleType": 0,
                     "eloRate": 735,
-                    "eloRank": 9260,
+                    "eloRank": 9444,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1088,8 +1318,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -1097,7 +1327,7 @@
                     "nickname": "umaifishy",
                     "roleType": 0,
                     "eloRate": 543,
-                    "eloRank": 15812,
+                    "eloRank": 16202,
                     "country": "tw"
                 }
             ],
@@ -1167,15 +1397,15 @@
                     "nickname": "_Resh",
                     "roleType": 0,
                     "eloRate": 626,
-                    "eloRank": 12507,
+                    "eloRank": 12823,
                     "country": "fr"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1238,16 +1468,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "6b667d32a3c04502adcb2938cf731064",
                     "nickname": "Calta_",
                     "roleType": 0,
-                    "eloRate": 785,
-                    "eloRank": 8336,
+                    "eloRate": 739,
+                    "eloRank": 9356,
                     "country": "au"
                 }
             ],
@@ -1316,8 +1546,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -1325,7 +1555,7 @@
                     "nickname": "13Odysseus",
                     "roleType": 0,
                     "eloRate": 665,
-                    "eloRank": 11056,
+                    "eloRank": 11287,
                     "country": "nz"
                 }
             ],
@@ -1392,15 +1622,15 @@
                     "nickname": "asphaltdream",
                     "roleType": 0,
                     "eloRate": 773,
-                    "eloRank": 8543,
+                    "eloRank": 8683,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1467,16 +1697,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "f690849a40c941a6b25028272b703848",
                     "nickname": "zSPC",
                     "roleType": 1,
-                    "eloRate": 698,
-                    "eloRank": 10129,
+                    "eloRate": 737,
+                    "eloRank": 9398,
                     "country": null
                 }
             ],
@@ -1543,15 +1773,15 @@
                     "nickname": "09Dragon_Heart",
                     "roleType": 0,
                     "eloRate": 478,
-                    "eloRank": 18138,
+                    "eloRank": 18590,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1615,15 +1845,15 @@
                     "nickname": "1kier",
                     "roleType": 0,
                     "eloRate": 588,
-                    "eloRank": 14178,
+                    "eloRank": 14524,
                     "country": "nz"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1692,16 +1922,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "7152043903df4fb084958e8a0ff977d8",
                     "nickname": "Migsej",
                     "roleType": 0,
-                    "eloRate": 462,
-                    "eloRank": 18628,
+                    "eloRate": 442,
+                    "eloRank": 19725,
                     "country": "dk"
                 }
             ],
@@ -1768,8 +1998,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -1777,7 +2007,7 @@
                     "nickname": "Mr_PenguinMC",
                     "roleType": 1,
                     "eloRate": 561,
-                    "eloRank": 15204,
+                    "eloRank": 15574,
                     "country": null
                 }
             ],
@@ -1845,15 +2075,15 @@
                     "nickname": "thatPERS0N",
                     "roleType": 0,
                     "eloRate": 674,
-                    "eloRank": 10773,
+                    "eloRank": 10998,
                     "country": "us"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -1918,16 +2148,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "617e4f3e1e2e4cbba38a69e32fd24a2e",
                     "nickname": "MapleFireExists",
                     "roleType": 0,
-                    "eloRate": 609,
-                    "eloRank": 13252,
+                    "eloRate": 506,
+                    "eloRank": 17592,
                     "country": "au"
                 }
             ],
@@ -1993,16 +2223,16 @@
                     "uuid": "2375922b44ba4aaaab7554ee395f15e0",
                     "nickname": "SeanyMcCrispy",
                     "roleType": 0,
-                    "eloRate": 511,
-                    "eloRank": 16978,
+                    "eloRate": 491,
+                    "eloRank": 18145,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2069,16 +2299,16 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
                     "uuid": "d3dd2ad0d3cf4f288e6360e69d331a22",
                     "nickname": "JeromeCracks",
                     "roleType": 0,
-                    "eloRate": 670,
-                    "eloRank": 10901,
+                    "eloRate": 650,
+                    "eloRank": 11827,
                     "country": "za"
                 }
             ],
@@ -2145,15 +2375,15 @@
                     "nickname": "DyerFTW",
                     "roleType": 0,
                     "eloRate": 597,
-                    "eloRank": 13802,
+                    "eloRank": 14167,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2221,8 +2451,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2230,7 +2460,7 @@
                     "nickname": "Jesteq",
                     "roleType": 0,
                     "eloRate": 442,
-                    "eloRank": 19235,
+                    "eloRank": 19725,
                     "country": "ru"
                 }
             ],
@@ -2295,8 +2525,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2304,7 +2534,7 @@
                     "nickname": "mwc0523",
                     "roleType": 0,
                     "eloRate": 506,
-                    "eloRank": 17155,
+                    "eloRank": 17592,
                     "country": "kr"
                 }
             ],
@@ -2372,15 +2602,15 @@
                     "nickname": "emmaroses",
                     "roleType": 0,
                     "eloRate": 704,
-                    "eloRank": 9958,
+                    "eloRank": 10168,
                     "country": "ca"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2445,8 +2675,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2454,7 +2684,7 @@
                     "nickname": "Noobercraft",
                     "roleType": 0,
                     "eloRate": 357,
-                    "eloRank": 21078,
+                    "eloRank": 21635,
                     "country": null
                 }
             ],
@@ -2520,16 +2750,16 @@
                     "uuid": "7c61333b8cad411e833745670ffff612",
                     "nickname": "Ihatelag34",
                     "roleType": 0,
-                    "eloRate": 584,
-                    "eloRank": 14322,
+                    "eloRate": 605,
+                    "eloRank": 13824,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2597,15 +2827,15 @@
                     "nickname": "Chtolly",
                     "roleType": 0,
                     "eloRate": 564,
-                    "eloRank": 15093,
+                    "eloRank": 15459,
                     "country": "us"
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2675,8 +2905,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2684,7 +2914,7 @@
                     "nickname": "The25thKhun",
                     "roleType": 0,
                     "eloRate": 373,
-                    "eloRank": 20812,
+                    "eloRank": 21359,
                     "country": "us"
                 }
             ],
@@ -2749,16 +2979,16 @@
                     "uuid": "9d78b2ad0da34328aa63b21b2987d259",
                     "nickname": "Oiler57",
                     "roleType": 0,
-                    "eloRate": 459,
-                    "eloRank": 18722,
+                    "eloRate": 440,
+                    "eloRank": 19785,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2822,8 +3052,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2831,7 +3061,7 @@
                     "nickname": "Kroket_",
                     "roleType": 0,
                     "eloRate": 236,
-                    "eloRank": 22205,
+                    "eloRank": 22802,
                     "country": "nl"
                 }
             ],
@@ -2901,15 +3131,15 @@
                     "nickname": "Craftify_",
                     "roleType": 0,
                     "eloRate": 310,
-                    "eloRank": 21682,
+                    "eloRank": 22251,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -2978,8 +3208,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -2987,7 +3217,7 @@
                     "nickname": "ElMaxiJuega",
                     "roleType": 0,
                     "eloRate": 391,
-                    "eloRank": 20492,
+                    "eloRank": 21018,
                     "country": null
                 }
             ],
@@ -3051,8 +3281,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -3060,7 +3290,7 @@
                     "nickname": "Sherthevin",
                     "roleType": 0,
                     "eloRate": 254,
-                    "eloRank": 22132,
+                    "eloRank": 22717,
                     "country": null
                 }
             ],
@@ -3127,8 +3357,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -3136,7 +3366,7 @@
                     "nickname": "mrfirestrike",
                     "roleType": 0,
                     "eloRate": 149,
-                    "eloRank": 22405,
+                    "eloRank": 22997,
                     "country": null
                 }
             ],
@@ -3203,8 +3433,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -3212,7 +3442,7 @@
                     "nickname": "WentzBrook11",
                     "roleType": 0,
                     "eloRate": 451,
-                    "eloRank": 18975,
+                    "eloRank": 19470,
                     "country": null
                 }
             ],
@@ -3280,15 +3510,15 @@
                     "nickname": "TheRealCocoa",
                     "roleType": 1,
                     "eloRate": 641,
-                    "eloRank": 11893,
+                    "eloRank": 12172,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -3359,15 +3589,15 @@
                     "nickname": "VEXISERGE",
                     "roleType": 0,
                     "eloRate": 540,
-                    "eloRank": 15908,
+                    "eloRank": 16299,
                     "country": null
                 },
                 {
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 }
             ],
@@ -3433,8 +3663,8 @@
                     "uuid": "5d851a87545645eb988079ced8ef4a6b",
                     "nickname": "MrLu4n",
                     "roleType": 0,
-                    "eloRate": 789,
-                    "eloRank": 8272,
+                    "eloRate": 764,
+                    "eloRank": 8878,
                     "country": "br"
                 },
                 {
@@ -3442,7 +3672,7 @@
                     "nickname": "frutigaero",
                     "roleType": 0,
                     "eloRate": 605,
-                    "eloRank": 13461,
+                    "eloRank": 13824,
                     "country": null
                 }
             ],
