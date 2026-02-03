@@ -16,7 +16,7 @@ achievements = [
 ]
 
 achievements_detailed = achievements + [
-    "story.lava_bucket",
+    "story.lava_bucket", # TODO Fix for Ruined Portal seeds
     "nether.obtain_crying_obsidian",
     "nether.obtain_blaze_rod",
     "projectelo.timeline.death"
@@ -60,7 +60,7 @@ def get_opponent(players: list[dict], uuid: str) -> str:
     return opponent
 
 
-def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> dict:
+def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False):
     timeline = pd.DataFrame(filter_timeline(match["splits"][0], uuid, detailed))
     timeline_timestamps = timeline.get('time').tolist()
     last_time = 0
@@ -71,29 +71,8 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
         last_time = timeline_timestamps[index]
         timeline_timestamps = timeline_timestamps[:index]
 
-    if detailed:
-        fieldnames = [
-            "Overworld",
-            "Portal",
-            "Nether Nav",
-            "Bastion Route",
-            "Bartering",
-            "Fortress Nav",
-            "Blazes",
-            "Blind",
-            "Stronghold",
-            "End",
-        ]
-    else:
-        fieldnames = [
-            "Overworld",
-            "Nether Nav",
-            "Bastion",
-            "Fortress",
-            "Blind",
-            "Stronghold",
-            "End",
-        ]
+    with open('src/splits.json', 'r') as f:
+        fieldnames = json.load(f)['detailed'] if detailed else json.load(f)['splits']
 
     splits = {name: '' for name in fieldnames}
 
@@ -119,33 +98,29 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False) -> 
     splits["Deaths"] = full_timeline.count('projectelo.timeline.death')
     splits["Resets"] = full_timeline.count('projectelo.timeline.reset')
 
-    # TODO Make the detailed version be saved on a separate file
     if detailed:
-        with open("../splits/splits_detailed.csv", "a", newline="") as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-            # Write header only if file is empty
-            if os.stat("../splits/splits_detailed.csv").st_size == 0:
-                writer.writeheader()
-
-            writer.writerow(splits)
+        write_splits(fieldnames, splits, file='splits_detailed.csv')
     else:
-        with open("../splits/my_splits.csv", "a", newline="") as csvfile:
-            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        write_splits(fieldnames, splits, file='my_splits.csv')
 
-            # Write header only if file is empty
-            if os.stat("../splits/my_splits.csv").st_size == 0:
-                writer.writeheader()
 
-            writer.writerow(splits)
+def write_splits(fieldnames: list, splits: dict, file: str):
+    with open(f"splits/{file}", "a", newline="") as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        # Write header only if file is empty
+        if os.stat(f"splits/{file}").st_size == 0:
+            writer.writeheader()
+
+        writer.writerow(splits)
 
 
 def update_splits_sheets(user_id: str):
-    if os.path.exists("../splits/my_splits.csv"):
-        os.remove("../splits/my_splits.csv")
-        os.remove("../splits/splits_detailed.csv")
+    if os.path.exists("splits/my_splits.csv"):
+        os.remove("splits/my_splits.csv")
+        os.remove("splits/splits_detailed.csv")
 
-    with open('../matches/recent_matches_splits.json', 'r') as f:
+    with open('matches/recent_matches_splits.json', 'r') as f:
         recent_matches = json.load(f)
 
     for match in recent_matches:

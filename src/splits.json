@@ -1,0 +1,23 @@
+{
+  "splits": [
+    "Overworld",
+    "Nether Nav",
+    "Bastion",
+    "Fortress",
+    "Blind",
+    "Stronghold",
+    "End"
+  ],
+  "detailed": [
+    "Overworld",
+    "Portal",
+    "Nether Nav",
+    "Bastion Route",
+    "Bartering",
+    "Fortress Nav",
+    "Blazes",
+    "Blind",
+    "Stronghold",
+    "End"
+  ]
+}

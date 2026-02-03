@@ -1,6 +1,6 @@
 import requests
 import json
-from timesplits import filter_timeline
+from src.timesplits import filter_timeline
 
 
 url = "https://mcsrranked.com/api"
@@ -17,14 +17,14 @@ def get_user():
     else:
         print("Player Not Found.")
 
-    with open('../user.json', 'w') as f:
+    with open('user.json', 'w') as f:
         json.dump(user, f)
 
     return username
 
 
 def get_user_matches():
-    with open('../user.json', 'r') as f:
+    with open('user.json', 'r') as f:
         user = json.load(f)
 
     user_id = user["uuid"]
@@ -54,8 +54,8 @@ def get_user_matches():
         matches_splits.append(match_info)
 
 
-    with open('../matches/matches.json', 'w') as matches_file:
+    with open('matches/matches.json', 'w') as matches_file:
         json.dump(matches, matches_file, indent=4)
 
-    with open('../matches/recent_matches_splits.json', 'w') as matches_info_file:
+    with open('matches/recent_matches_splits.json', 'w') as matches_info_file:
         json.dump(matches_splits, matches_info_file, indent=4)
