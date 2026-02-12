@@ -28,7 +28,7 @@ def get_user_matches():
         user = json.load(f)
 
     user_id = user["uuid"]
-    matches = requests.get(url + f'/users/{user_id}/matches?count=50').json()
+    matches = requests.get(url + f'/users/{user_id}/matches?count=80').json()
 
     matches_id= []
     for match in matches['data']:
