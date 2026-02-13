@@ -53,19 +53,36 @@ def statistics(won: bool=None,
     with open('../src/splits.json', 'r') as f:
         splits_name = json.load(f)['detailed'] if detailed else json.load(f)['splits']
 
-    splits_mean = {name: pd.to_timedelta(splits_filtered[name]).mean() for name in splits_name}
+    splits_dict = {
+        name: [
+            pd.to_timedelta(splits_filtered[name]).mean(),
+            Timedelta(seconds=standard_deviation(pd.to_timedelta(splits_filtered[name]).tolist()))
+        ] for name in splits_name
+    }
 
-    splits_mean['Total'] = pd.to_timedelta(splits_filtered['Total']).mean()
-    splits_mean['Death Rate'] = splits_filtered['Deaths'].mean()
-    splits_mean['Reset Rate'] = splits_filtered['Resets'].mean()
+    splits_dict['Total'] = [
+            pd.to_timedelta(splits_filtered['Total']).mean(),
+            Timedelta(seconds=standard_deviation(pd.to_timedelta(splits_filtered['Total']).tolist()))
+        ]
 
-    splits_std = {name: standard_deviation(pd.to_timedelta(splits_filtered[name]).tolist()) for name in splits_name}
+    splits_dict['Death Rate'] = [
+        splits_filtered['Deaths'].mean(),
+        standard_deviation(splits_filtered['Deaths'].tolist())
+    ]
 
-    splits_std['Total'] = standard_deviation(pd.to_timedelta(splits_filtered['Total']).tolist())
-    splits_std['Death Rate'] = standard_deviation(splits_filtered['Deaths'].tolist())
-    splits_std['Reset Rate'] = standard_deviation(splits_filtered['Resets'].tolist())
+    splits_dict['Reset Rate'] = [
+        splits_filtered['Resets'].mean(),
+        standard_deviation(splits_filtered['Resets'].tolist())
+    ]
 
-    return splits_mean, splits_std
+
+    df = pd.DataFrame.from_dict(
+        data=splits_dict,
+        orient='index',
+        columns=['Mean', 'Standard Deviation']
+    )
+
+    return df
 
 
 def standard_deviation(sample: list) -> float:
@@ -85,25 +102,27 @@ def contains_type(input_list, target_type):
     return any(isinstance(item, target_type) for item in input_list)
 
 
-flawless_mean, flawless_std = statistics(won=True, forfeited=False, deaths=0, resets=0, time=Timedelta(minutes=30))
+flawless = statistics(won=True, forfeited=False, deaths=0, resets=0, time=Timedelta(minutes=30))
 deathless = statistics(won=True, forfeited=False, deaths=0)
-completions_mean, completions_std = statistics(won=True, forfeited=False)
+completions = statistics(won=True, forfeited=False)
 
 outplayed = statistics(won=False, forfeited=False, deaths=0, resets=0)
 
-village_mean, village_std = statistics(seedType='VILLAGE')
-ship_mean, ship_std = statistics(seedType='SHIPWRECK')
-temple_mean, temple_std = statistics(seedType='DESERT_TEMPLE')
-portal_mean, portal_std = statistics(seedType='RUINED_PORTAL')
+village = statistics(seedType='VILLAGE')
+shipwreck = statistics(seedType='SHIPWRECK')
+temple = statistics(seedType='DESERT_TEMPLE')
+portal = statistics(seedType='RUINED_PORTAL')
 
-pprint(completions_mean)
-pprint(completions_std)
+selected = deathless
 
-runs_dist = stat.NormalDist(mu=1609,sigma=346)
+pprint(selected)
+
+mean = selected['Mean']['Total'].total_seconds()
+std = selected['Standard Deviation']['Total'].total_seconds()
+
+runs_dist = stat.NormalDist(mu=mean,sigma=std)
 probability_of_pb = runs_dist.cdf(1004)
-print(runs_dist.cdf(1004))
-num_runs = stat.NormalDist(mu=1/probability_of_pb,sigma=math.sqrt(1-probability_of_pb)/probability_of_pb)
-print(num_runs.inv_cdf(0.95))
+print("Probability of PB: ", (runs_dist.cdf(1004) * 100), '%')
 
 
 

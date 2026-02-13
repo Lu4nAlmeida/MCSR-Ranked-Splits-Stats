@@ -79,15 +79,15 @@ def add_match_to_spreadsheet(match: dict, uuid: str, detailed: bool = False):
     for name in fieldnames:
         try:
             current_time = timeline_timestamps.pop()
-            splits[name] = str(datetime.timedelta(milliseconds=current_time - last_time)).split('.')[0]
+            splits[name] = str(datetime.timedelta(milliseconds=current_time - last_time))
             last_time = current_time
         except IndexError:
             splits[name] = None
 
     fieldnames = ["Date", "Opponent", "Won", "Forfeited"] + fieldnames + ["Total", "Seed", "Bastion Type", "Deaths", "Resets"]
-    splits["Date"] = pd.to_datetime(match["date"], unit="s")
+    splits["Date"] = str(pd.to_datetime(match["date"], unit="s"))
     splits["Opponent"] = get_opponent(match["players"], uuid)
-    splits["Total"] = str(datetime.timedelta(milliseconds=match["result"]["time"])).split('.')[0]
+    splits["Total"] = str(datetime.timedelta(milliseconds=match["result"]["time"]))
     splits["Seed"] = match["seedType"]
     splits["Bastion Type"] = match["bastionType"]
     splits["Won"] = True if match["result"]["uuid"] == uuid else False
