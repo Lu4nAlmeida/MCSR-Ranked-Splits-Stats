@@ -75,14 +75,11 @@ def statistics(won: bool=None,
         standard_deviation(splits_filtered['Resets'].tolist())
     ]
 
-
-    df = pd.DataFrame.from_dict(
+    return pd.DataFrame.from_dict(
         data=splits_dict,
         orient='index',
         columns=['Mean', 'Standard Deviation']
     )
-
-    return df
 
 
 def standard_deviation(sample: list) -> float:
@@ -113,7 +110,7 @@ shipwreck = statistics(seedType='SHIPWRECK')
 temple = statistics(seedType='DESERT_TEMPLE')
 portal = statistics(seedType='RUINED_PORTAL')
 
-selected = deathless
+selected = statistics(bastionType='BRIDGE', seedType='RUINED_PORTAL')
 
 pprint(selected)
 
@@ -121,8 +118,9 @@ mean = selected['Mean']['Total'].total_seconds()
 std = selected['Standard Deviation']['Total'].total_seconds()
 
 runs_dist = stat.NormalDist(mu=mean,sigma=std)
-probability_of_pb = runs_dist.cdf(1004)
-print("Probability of PB: ", (runs_dist.cdf(1004) * 100), '%')
+probability_of_pb = runs_dist.cdf(1004) * 100
+
+print(f"Probability of PB: {probability_of_pb:.2f}%")
 
 
 
